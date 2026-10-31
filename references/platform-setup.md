@@ -11,6 +11,7 @@ This skill follows the open Agent Skills format (a folder with `SKILL.md`, `scri
 | Claude Code | Folder in `~/.claude/skills/` or the project's `.claude/skills/` | PDF |
 | ChatGPT Business, Enterprise, Edu, Healthcare | Skills > Create > Upload from your computer (uploaded skills are scanned first) | PDF or HTML, depending on the sandbox |
 | OpenAI Codex, Cursor and other Agent Skills clients | Copy the folder into the client's skills directory | PDF |
+| Gemini web app (gemini.google.com, computer) | A chat ZIP may hold only 10 files, and this skill has more. Instead: Add files > More uploads > Import code > paste `https://github.com/fadiahmadlinkedin-ai/cv-2026-top` (public, up to 5,000 files). Not available in the mobile app | Depends on whether code runs in that chat; otherwise no-code HTML |
 | Gemini CLI | `gemini skills install <path-or-git-url>`, or copy into `~/.gemini/skills/` | PDF |
 | Gemini Gems, custom GPTs, any chat without code | Paste `SKILL.md` into the instructions and add `references/*.md` and `assets/no-code/*.html` as knowledge files | Hand-filled HTML or plain text (`references/no-code-mode.md`) |
 

@@ -15,6 +15,7 @@
 ## طريقة الاستخدام
 
 1. افتح محادثة جديدة على المنصة التي تستخدمها، وأرفق ملف المهارة `cv-2026-top.zip`. وإن كانت منصتك فيها قسم للمهارات (Skills)، فيمكنك رفعه هناك مرة واحدة بدل إرفاقه في كل محادثة.
+   - **في Gemini:** لا ترفع ملف ZIP، لأن Gemini لا يقرأ إلا 10 ملفات من داخله. افتح gemini.google.com من الحاسوب، واضغط زر إضافة الملفات، ثم More uploads، ثم Import code، والصق هذا الرابط: `https://github.com/fadiahmadlinkedin-ai/cv-2026-top`
 2. أرفق سيرتك القديمة أو معلوماتك، وإعلان الوظيفة إن وجد.
 3. الصق هذا الطلب، واكتب اللغة والوظيفة:
 
@@ -52,6 +53,7 @@ A free skill that turns your information, even rough notes, into a professional,
 **How to use it:**
 
 1. Open a new chat on your AI platform and attach `cv-2026-top.zip`. If your platform has a Skills section, you can upload it there once instead.
+   - **In Gemini:** do not upload the ZIP (Gemini reads only 10 files inside a ZIP). In the web app on a computer, click Add files > More uploads > Import code, and paste `https://github.com/fadiahmadlinkedin-ai/cv-2026-top`
 2. Attach your old CV or notes, and the job advert if you have one.
 3. Paste this prompt:
 
