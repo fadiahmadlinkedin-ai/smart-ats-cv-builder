@@ -1,0 +1,89 @@
+{
+  "_comment": "Fictional sample data for a fresh graduate. Education and projects come before experience.",
+  "name": "Lina Haddad",
+  "email": "lina.haddad@example.com",
+  "phone": "+44 20 7946 0958",
+  "city": "Manchester",
+  "country": "United Kingdom",
+  "linkedin": "linkedin.com/in/lina-haddad-example",
+  "website": "github.com/lina-haddad-example",
+  "summary": "Computer science graduate with a focus on data analysis and backend development. Built data pipelines and dashboards in two internships and three university projects. Comfortable with Python, SQL and cloud tools, and keen to grow as a data engineer in a product team.",
+  "section_order": [
+    "summary",
+    "education",
+    "projects",
+    "experience",
+    "strengths",
+    "certifications",
+    "languages"
+  ],
+  "labels": {
+    "strengths": "Technical Skills"
+  },
+  "strengths": [
+    "Languages: Python, SQL, JavaScript",
+    "Data: pandas, Power BI, PostgreSQL, Apache Airflow (basic)",
+    "Tools: Git, Docker, Linux, Google Cloud (BigQuery)"
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. (Hons) Computer Science, First Class",
+      "university": "The University of Manchester",
+      "location": "Manchester, UK",
+      "date": "2022 – 2025",
+      "details": "Dissertation: forecasting bike-share demand with gradient-boosted models (grade 78%)."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Bike-Share Demand Forecast",
+      "date": "2025",
+      "description": "Trained and compared three models on four years of open trip data; the best model reduced forecast error by 18% against the baseline.",
+      "technologies": "Python, pandas, scikit-learn, LightGBM"
+    },
+    {
+      "name": "Student Housing Price Tracker",
+      "date": "2024",
+      "description": "Scraped and cleaned 12,000 rental listings and published a weekly dashboard used by the student union.",
+      "technologies": "Python, PostgreSQL, Power BI"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Brightline Analytics",
+      "location": "Leeds, UK",
+      "title": "Data Engineering Intern",
+      "dates": "06/2024 – 09/2024",
+      "bullets": [
+        "Rebuilt a nightly sales pipeline in Airflow, cutting run time from 95 to 30 minutes.",
+        "Wrote data-quality tests that caught 14 schema changes before they reached client reports."
+      ]
+    },
+    {
+      "company": "University of Manchester IT Services",
+      "location": "Manchester, UK",
+      "title": "Student Helpdesk Assistant (part-time)",
+      "dates": "10/2022 – 05/2024",
+      "bullets": [
+        "Resolved about 25 student and staff tickets per shift with a 96% satisfaction score."
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Google Cloud Digital Leader",
+      "issuer": "Google Cloud",
+      "date": "2025"
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "level": "Fluent"
+    },
+    {
+      "name": "Arabic",
+      "level": "Native"
+    }
+  ]
+}

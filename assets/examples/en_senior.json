@@ -1,0 +1,96 @@
+{
+  "_comment": "Fictional sample data for testing. Replace every value with the candidate's real, confirmed information.",
+  "name": "Daniel Okafor",
+  "email": "daniel.okafor@example.com",
+  "phone": "+1 202 555 0143",
+  "city": "Austin",
+  "country": "USA",
+  "linkedin": "linkedin.com/in/daniel-okafor-example",
+  "summary": "Operations and supply chain manager with 11 years of experience running multi-site warehouse networks for retail and e-commerce. Cut fulfilment costs and lead times through process redesign, warehouse automation and data-driven planning. Leads teams of up to 140 people and works closely with finance, procurement and IT on large change programmes.",
+  "strengths": [
+    "Operations: S&OP, demand planning, inventory optimisation, lean warehousing, 3PL management",
+    "Systems: SAP S/4HANA, Manhattan WMS, Power BI, Excel (advanced), SQL",
+    "Leadership: multi-site teams, budget ownership (USD 18M), vendor negotiation, change management"
+  ],
+  "experience": [
+    {
+      "company": "Northwind Retail Group",
+      "location": "Austin, TX",
+      "title": "Senior Operations Manager",
+      "dates": "04/2019 – Present",
+      "project": "Leads three distribution centres serving 220 stores and the online channel.",
+      "bullets": [
+        "Redesigned pick-and-pack flows and slotting across three sites, raising order lines per labour hour by 22% within one year.",
+        "Led the USD 4.5M rollout of goods-to-person automation at the main site, delivered on budget and two weeks early.",
+        "Reduced average store replenishment lead time from 5 days to 3 by introducing daily S&OP reviews with merchandising.",
+        "Built a Power BI control tower that gives 60 managers one shared view of service level, backlog and labour cost.",
+        "Negotiated new 3PL contracts for peak season, saving USD 610K a year while keeping on-time delivery above 97%."
+      ]
+    },
+    {
+      "company": "Contoso Logistics",
+      "location": "Dallas, TX",
+      "title": "Warehouse Operations Manager",
+      "dates": "02/2015 – 03/2019",
+      "bullets": [
+        "Managed a 40,000 m² cross-dock site with 140 staff across two shifts and an annual budget of USD 9M.",
+        "Lowered inventory write-offs by 31% through cycle-count discipline and root-cause reviews of every variance.",
+        "Introduced a structured onboarding programme that cut first-90-day staff turnover from 28% to 17%.",
+        "Moved the site from paper picking to RF scanning, improving picking accuracy from 98.1% to 99.6%."
+      ]
+    },
+    {
+      "company": "Fabrikam Foods",
+      "location": "Houston, TX",
+      "title": "Supply Chain Analyst",
+      "dates": "07/2013 – 01/2015",
+      "bullets": [
+        "Built the weekly demand forecast for 1,200 SKUs, improving forecast accuracy from 71% to 82%.",
+        "Automated stock reports with SQL and Excel macros, saving the planning team about 10 hours per week."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MBA, Operations Management",
+      "university": "The University of Texas at Austin",
+      "location": "Austin, TX",
+      "date": "2019"
+    },
+    {
+      "degree": "B.Sc. Industrial Engineering",
+      "university": "Texas A&M University",
+      "location": "College Station, TX",
+      "date": "2013"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Supply Chain Professional (CSCP)",
+      "issuer": "ASCM",
+      "date": "2018"
+    },
+    {
+      "name": "Lean Six Sigma Green Belt",
+      "issuer": "ASQ",
+      "date": "2016"
+    }
+  ],
+  "awards": [
+    {
+      "name": "Operations Leader of the Year",
+      "issuer": "Northwind Retail Group",
+      "date": "2022"
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "level": "Native"
+    },
+    {
+      "name": "French",
+      "level": "Professional working proficiency"
+    }
+  ]
+}
