@@ -1,6 +1,6 @@
 # Platform setup
 
-This skill follows the open Agent Skills format (a folder with `SKILL.md`, `scripts/`, `references/`, `assets/`). The folder must stay named `cv-2026-top`, the same as the `name` field. Facts below were checked against each vendor's help pages in October 2026. Menus change, so follow the vendor page if a label differs.
+This skill follows the open Agent Skills format (a folder with `SKILL.md`, `scripts/`, `references/`, `assets/`). The folder must stay named `cv-2026-top`, the same as the `name` field. Facts below were checked against each vendor's help pages in October and November 2026. Menus change, so follow the vendor page if a label differs.
 
 ## Which mode each platform gets
 
@@ -11,9 +11,9 @@ This skill follows the open Agent Skills format (a folder with `SKILL.md`, `scri
 | Claude Code | Folder in `~/.claude/skills/` or the project's `.claude/skills/` | PDF |
 | ChatGPT Business, Enterprise, Edu, Healthcare | Skills > Create > Upload from your computer (uploaded skills are scanned first) | PDF or HTML, depending on the sandbox |
 | OpenAI Codex, Cursor and other Agent Skills clients | Copy the folder into the client's skills directory | PDF |
-| Gemini app | Upload works only in the web app at gemini.google.com: Customize > Skills > Create > Upload > select `cv-2026-top.zip` > Create (needs a personal Google account, age 18+ and Keep Activity on). Then type `/` or `@` in a chat, on any device, and pick the skill. Google lists plain-text files, `.py`, `.html`, `.json` and `.png` as supported, but not `.ttf` fonts. If the upload is refused, on a computer use Add files > More uploads > Import code > `https://github.com/fadiahmadlinkedin-ai/cv-2026-top`. Do not attach the ZIP in a chat: a chat ZIP may hold only 10 files | Script PDF if code runs with the fonts present; otherwise a PDF through Gemini's own file creation (copy test in `no-code-mode.md`) |
+| Gemini app | Do not attach the ZIP in a chat: a chat ZIP may hold only 10 files. Attach `cv-2026-top-lite.txt` (release asset, one file with the same rules, design and a DOCX/PDF builder) in a chat, on the web or the phone app. Skills upload (web only, Customize > Skills > Create > Upload) lists plain-text, code, `.html`, `.json` and image files as supported, but not `.ttf` fonts, so the full ZIP is not recommended there | PDF from the lite builder or Gemini's own file creation; for Arabic, a DOCX in Amiri the user saves as PDF in Google Docs |
 | Gemini CLI | `gemini skills install <path-or-git-url>`, or copy into `~/.gemini/skills/` | PDF |
-| Gemini Gems, custom GPTs, any chat without code | Paste `SKILL.md` into the instructions and add `references/*.md` and `assets/no-code/*.html` as knowledge files | Hand-filled HTML or plain text (`references/no-code-mode.md`) |
+| Any other chat (Claude chat without the skill, Copilot, DeepSeek, Grok, custom GPTs) | Attach `cv-2026-top-lite.txt` in the chat, or paste `SKILL.md` into the instructions and add `references/*.md` and `assets/no-code/*.html` as knowledge files | Lite builder PDF/DOCX, or hand-filled HTML or plain text (`references/no-code-mode.md`) |
 
 Google's Gemini CLI page notes that for unpaid-tier and Google One users, Gemini CLI was replaced by Antigravity CLI on 18 June 2026. Follow Google's current instructions there; the skill folder itself does not change.
 
@@ -56,3 +56,6 @@ zip -r cv-2026-top.zip cv-2026-top -x "*/__pycache__/*" "*.pyc"
 ```
 
 The archive is about 1.5 MB, mostly the bundled fonts. Do not remove the fonts: without them Arabic text and digits can render incorrectly.
+
+## The one-file edition
+`cv-2026-top-lite.txt` is published with every release, next to `cv-2026-top.zip`. It is not part of the skill folder. It holds the same truth rules, content rules and design in one text file, plus `cv_lite_build.py` (python-docx, then LibreOffice for the PDF, with the same multi-reader text check). Arabic uses the Amiri font: in tests it was the only font whose PDF kept lam-alef intact both from LibreOffice and from Google Docs' PDF export. Use it where a ZIP cannot be attached or read.

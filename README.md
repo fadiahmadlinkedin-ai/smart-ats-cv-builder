@@ -12,21 +12,26 @@
 - تحذف المعلومات الحساسة التي لا مكان لها في السيرة، مثل رقم الجواز والديانة والعنوان الكامل.
 - تعطيك ملف PDF بتصميم عمود واحد، تقرؤه أنظمة ATS كلمة كلمة، وتفحصه قبل تسليمه.
 
-## طريقة الاستخدام
-
-1. افتح محادثة جديدة على المنصة التي تستخدمها، وأرفق ملف المهارة `cv-2026-top.zip`. وإن كانت منصتك فيها قسم للمهارات (Skills)، فيمكنك رفعه هناك مرة واحدة بدل إرفاقه في كل محادثة.
-   - **في Gemini:** من المتصفح على الحاسوب افتح gemini.google.com، واضغط تخصيص (Customize) ثم المهارات (Skills) ثم إنشاء (Create) ثم تحميل (Upload)، واختر `cv-2026-top.zip`، ثم اضغط إنشاء في أعلى الصفحة لحفظ المهارة. بعدها اكتب `/` في المحادثة واختر المهارة. لا ترفق الملف داخل المحادثة. وإن لم يقبل الملف، فمن الحاسوب اضغط زر إضافة الملفات، ثم More uploads، ثم Import code، والصق هذا الرابط: `https://github.com/fadiahmadlinkedin-ai/cv-2026-top`
-2. أرفق سيرتك القديمة أو معلوماتك، وإعلان الوظيفة إن وجد.
+## طريقتان للاستخدام
+### الطريقة 1: إرفاق ملف في المحادثة (لكل المنصات)
+1. حمّل الملف المناسب لمنصتك:
+   - **ChatGPT وManus:** الملف الكامل [`cv-2026-top.zip`](https://github.com/fadiahmadlinkedin-ai/cv-2026-top/releases/latest/download/cv-2026-top.zip).
+   - **Gemini وClaude وأي مساعد آخر (Copilot وDeepSeek وGrok وغيرها):** الملف الواحد [`cv-2026-top-lite.txt`](https://github.com/fadiahmadlinkedin-ai/cv-2026-top/releases/latest/download/cv-2026-top-lite.txt). لا ترفق ملف ZIP في محادثة Gemini، لأنها لا تقرأ إلا 10 ملفات من داخله.
+2. افتح محادثة جديدة، وأرفق الملف، ومعه سيرتك القديمة أو معلوماتك، وإعلان الوظيفة إن وجد.
 3. الصق هذا الطلب، واكتب اللغة والوظيفة:
-
 ```text
-استخدم مهارة cv-2026-top (إذا أرفقتها لك ملف ZIP ففك ضغطه أولًا)، واقرأ ملف SKILL.md كاملًا واتبع خطواته بالترتيب.
+اتبع تعليمات الملف المرفق cv-2026-top لكتابة سيرتي الذاتية (إذا كان ملف ZIP ففك ضغطه، واقرأ SKILL.md كاملًا واتبع خطواته بالترتيب).
 اكتب لي سيرة ذاتية احترافية متوافقة مع ATS باللغة [العربية أو الإنجليزية] لوظيفة [المسمى الوظيفي، أو الصق إعلان الوظيفة].
-استخدم معلوماتي المرفقة فقط، ولا تضف أي معلومة غير موجودة فيها، واسألني إذا نقص شيء مهم.
-أرسل لي السيرة ملف PDF: ابنِه بالسكربت scripts/build_cv.py إذا كنت تستطيع تشغيل الأكواد، وإلا فاتبع ملف references/no-code-mode.md.
+استخدم معلوماتي فقط، ولا تضف أي معلومة غير موجودة فيها، واسألني إذا نقص شيء مهم.
+أرسل لي السيرة ملف PDF، ومعه ملف Word إن أمكن.
+معلوماتي: [اكتب معلوماتك هنا بأي طريقة، أو أرفق سيرتك القديمة]
 ```
+### الطريقة 2: تثبيتها مرة واحدة كمهارة (Claude وManus)
+ترفع `cv-2026-top.zip` مرة واحدة، ثم تستدعيها في أي محادثة دون إرفاق شيء:
+- **Claude:** من Settings ثم Capabilities فعّل Code execution and file creation، ثم من Customize ثم Skills اضغط + ثم Create skill ثم Upload a skill.
+- **Manus:** من قائمة Skills اضغط Add ثم Upload a skill، ثم اكتب `/cv-2026-top` في المحادثة.
 
-**تأكد أن ATS يقرأ سيرتك:** افتح ملف PDF، وحدد النص كله، وانسخه والصقه في ملف نصي. إن ظهر الكلام سليمًا وبالترتيب، فأنظمة ATS تقرؤه.
+**تأكد أن ATS يقرأ سيرتك:** افتح ملف PDF، وحدد النص كله، وانسخه والصقه في ملف نصي. إن ظهر الكلام سليمًا وبالترتيب، فأنظمة ATS تقرؤه. وإن ظهرت حروف مفككة، فاستخدم ملف Word: افتحه في تطبيق Google Docs، ثم النقاط الثلاث، ثم Share & export، ثم Send a copy، واختر PDF. وعلى الحاسوب: File ثم Download ثم PDF Document.
 
 **إذا وصلك ملف HTML بدل PDF:** افتحه في Google Chrome أو Microsoft Edge، ثم اضغط Ctrl+P (أو Cmd+P على Mac)، واختر «حفظ بتنسيق PDF»، وحجم الورق A4، وأوقف «الرؤوس والتذييلات»، ثم احفظ.
 
@@ -52,21 +57,23 @@ A free skill that turns your information, even rough notes, into a professional,
 
 **What it does:** writes your CV from your own facts only (no invented numbers or experience), asks once about anything important that is missing, tailors the CV to a job advert, removes sensitive details that do not belong on a CV, and delivers a checked single-column PDF that ATS software reads word for word.
 
-**How to use it:**
+**Two ways to use it**
 
-1. Open a new chat on your AI platform and attach `cv-2026-top.zip`. If your platform has a Skills section, you can upload it there once instead.
-   - **In Gemini:** on a computer, open gemini.google.com in a browser, click Customize > Skills > Create > Upload, choose `cv-2026-top.zip`, then click Create at the top to save the skill. Then type `/` in a chat and pick the skill. Do not attach the file inside a chat. If the file is refused, on a computer click Add files > More uploads > Import code, and paste `https://github.com/fadiahmadlinkedin-ai/cv-2026-top`
-2. Attach your old CV or notes, and the job advert if you have one.
+**Method 1: attach a file in a chat (every platform).**
+1. Download the right file: [`cv-2026-top.zip`](https://github.com/fadiahmadlinkedin-ai/cv-2026-top/releases/latest/download/cv-2026-top.zip) for ChatGPT and Manus; the single file [`cv-2026-top-lite.txt`](https://github.com/fadiahmadlinkedin-ai/cv-2026-top/releases/latest/download/cv-2026-top-lite.txt) for Gemini, Claude and any other assistant (Copilot, DeepSeek, Grok...). Do not attach the ZIP in a Gemini chat: Gemini reads only 10 files inside a ZIP.
+2. Open a new chat and attach the file with your old CV or notes, and the job advert if you have one.
 3. Paste this prompt:
-
 ```text
-Use the cv-2026-top skill (if I attached it as a ZIP file, unzip it first). Read SKILL.md in full and follow its steps in order.
+Follow the instructions in the attached cv-2026-top file to write my CV (if it is a ZIP file, unzip it, read SKILL.md in full and follow its steps in order).
 Write me a professional, ATS-friendly CV in [English or Arabic] for [job title, or paste the job advert].
-Use only the information I attached. Do not add any fact that is not in it, and ask me if something important is missing.
-Send me the CV as a PDF file: build it with scripts/build_cv.py if you can run code; otherwise follow references/no-code-mode.md.
+Use only my information. Do not add any fact that is not in it, and ask me if something important is missing.
+Send me the CV as a PDF file, plus a Word file if you can.
+My information: [write your details here in any form, or attach your old CV]
 ```
 
-**Check that ATS software can read it:** open the PDF, select all the text, and paste it into a plain text editor. If every word appears whole and in order, ATS software can read it.
+**Method 2: install it once as a skill (Claude and Manus).** Upload `cv-2026-top.zip` once, then call it in any chat. Claude: Settings > Capabilities > turn on Code execution and file creation, then Customize > Skills > + > Create skill > Upload a skill. Manus: Skills > Add > Upload a skill, then type `/cv-2026-top` in a chat.
+
+**Check that ATS software can read it:** open the PDF, select all the text, and paste it into a plain text editor. If every word appears whole and in order, ATS software can read it. If letters come out broken, use the Word file: open it in the Google Docs app, tap the three dots > Share & export > Send a copy > PDF; on a computer, File > Download > PDF Document.
 
 **If you receive an HTML file instead of a PDF:** open it in Google Chrome or Microsoft Edge, press Ctrl+P (Cmd+P on Mac), choose **Save as PDF**, paper size **A4**, turn **Headers and footers** off, and save.
 

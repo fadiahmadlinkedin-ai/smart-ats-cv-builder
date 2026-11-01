@@ -3,7 +3,7 @@ name: cv-2026-top
 description: Create, rewrite, translate or tailor professional ATS-friendly CVs and resumes in English or Arabic, delivered as a print-ready PDF with a clean single-column design, embedded fonts and built-in quality checks. Use when someone asks to write, improve, update or reformat a CV or resume, adapt it to a job advert, turn notes or an old CV into a new one, or build an Arabic CV (سيرة ذاتية، سي في، تحديث السيرة الذاتية). Works with or without code execution.
 license: Free for personal use; do not sell or re-attribute (LICENSE.md). Bundled fonts are SIL Open Font License 1.1 (assets/fonts/OFL.txt).
 metadata:
-  version: "7.1.2"
+  version: "7.2.0"
   author: "Fadi Ahmad"
   homepage: "https://www.fadiahmad.com"
   languages: "en, ar"
