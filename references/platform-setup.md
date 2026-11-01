@@ -11,13 +11,15 @@ This skill follows the open Agent Skills format (a folder with `SKILL.md`, `scri
 | Claude Code | Folder in `~/.claude/skills/` or the project's `.claude/skills/` | PDF |
 | ChatGPT Business, Enterprise, Edu, Healthcare | Skills > Create > Upload from your computer (uploaded skills are scanned first) | PDF or HTML, depending on the sandbox |
 | OpenAI Codex, Cursor and other Agent Skills clients | Copy the folder into the client's skills directory | PDF |
-| Gemini web app (gemini.google.com, computer) | A chat ZIP may hold only 10 files, and this skill has more. Instead: Add files > More uploads > Import code > paste `https://github.com/fadiahmadlinkedin-ai/cv-2026-top` (public, up to 5,000 files). Not available in the mobile app | Depends on whether code runs in that chat; otherwise no-code HTML |
+| Gemini app (web, mobile, Mac) | Customize > Skills > Create > Upload > select `cv-2026-top.zip` (needs age 18+ and Keep Activity on), then type `/` or `@` in a chat and pick the skill. Google lists plain-text files, `.py`, `.html`, `.json` and `.png` as supported, but not `.ttf` fonts. If the upload is refused, on a computer use Add files > More uploads > Import code > `https://github.com/fadiahmadlinkedin-ai/cv-2026-top`. Do not attach the ZIP in a chat: a chat ZIP may hold only 10 files | Script PDF if code runs with the fonts present; otherwise a PDF through Gemini's own file creation (copy test in `no-code-mode.md`) |
 | Gemini CLI | `gemini skills install <path-or-git-url>`, or copy into `~/.gemini/skills/` | PDF |
 | Gemini Gems, custom GPTs, any chat without code | Paste `SKILL.md` into the instructions and add `references/*.md` and `assets/no-code/*.html` as knowledge files | Hand-filled HTML or plain text (`references/no-code-mode.md`) |
 
 Google's Gemini CLI page notes that for unpaid-tier and Google One users, Gemini CLI was replaced by Antigravity CLI on 18 June 2026. Follow Google's current instructions there; the skill folder itself does not change.
 
 No-code HTML loads its fonts from fixed public copies of the bundled files, so the user needs internet access when opening it. The HTML that `build_cv.py` writes embeds the fonts and works offline.
+
+If a platform drops the `.ttf` files, `--env` reports them as missing. English PDFs then build with substitute fonts and a warning, and Arabic PDFs fail the text check on purpose, so switch to the no-code route for Arabic.
 
 ## Check what the computer can do
 

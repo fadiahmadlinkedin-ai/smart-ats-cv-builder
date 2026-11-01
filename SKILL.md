@@ -3,7 +3,7 @@ name: cv-2026-top
 description: Create, rewrite, translate or tailor professional ATS-friendly CVs and resumes in English or Arabic, delivered as a print-ready PDF with a clean single-column design, embedded fonts and built-in quality checks. Use when someone asks to write, improve, update or reformat a CV or resume, adapt it to a job advert, turn notes or an old CV into a new one, or build an Arabic CV (سيرة ذاتية، سي في، تحديث السيرة الذاتية). Works with or without code execution.
 license: Free for personal use; do not sell or re-attribute (LICENSE.md). Bundled fonts are SIL Open Font License 1.1 (assets/fonts/OFL.txt).
 metadata:
-  version: "7.1.1"
+  version: "7.1.2"
   author: "Fadi Ahmad"
   homepage: "https://www.fadiahmad.com"
   languages: "en, ar"
@@ -39,9 +39,9 @@ python3 scripts/build_cv.py --env
 | You can... | Mode | Read |
 | :--- | :--- | :--- |
 | run Python | **Script mode** (steps 4–6 below). Gives a checked PDF, or a print-ready HTML when no PDF engine exists | this file |
-| not run code | **No-code mode**: fill the HTML template by hand, or write plain text | `references/no-code-mode.md` |
+| not run code | **No-code mode**: write the CV by hand, then deliver a PDF with the platform's own file creation, or a hand-filled HTML or plain text | `references/no-code-mode.md` |
 
-Installation per platform (Manus, Claude, ChatGPT, Codex, Gemini CLI, Gems, custom GPTs) is in `references/platform-setup.md`.
+The user expects a PDF in every mode. Installation per platform (Manus, Claude, ChatGPT, Gemini, Codex, Gemini CLI, Gems, custom GPTs) is in `references/platform-setup.md`.
 
 ### 4. Write the data file (script mode)
 

@@ -2,6 +2,16 @@
 
 Use this when the assistant cannot run Python, for example a chat-only model, a custom GPT or Gem without code execution, or any environment where `scripts/build_cv.py` fails to start. The content rules in `content-guide.md` still apply in full.
 
+## Deliver a PDF
+
+The user expects a PDF. Use the first route that works:
+
+1. **The platform's own file creation.** Some assistants create PDF files directly in the chat (Gemini has done so for all users since April 2026). Write the finished CV, then create the PDF with this structure: one column, the standard section headings, real selectable text, A4, and no tables, columns, text boxes, photos, logos or icons. An Arabic CV runs right to left. Name the file `Firstname_Lastname_CV.pdf` and give the user the copy test below.
+2. **Hand-filled HTML** (Option A). The user saves it as a PDF from Chrome or Edge. This is the safest route for Arabic, because the design and its fonts were tested for ATS reading.
+3. **Plain text** (Option B), for application forms that only accept pasted text.
+
+**Copy test (tell the user):** open the PDF, select all the text, copy it and paste it into a plain text editor. Every word should appear whole and in order. If Arabic letters come out separated, reversed or out of order, ATS software will misread them too: use the HTML route for that CV.
+
 ## Option A: hand-filled HTML (keeps the professional design)
 
 1. Choose the template: `assets/no-code/cv_template_en.html` (English, left to right) or `assets/no-code/cv_template_ar.html` (Arabic, right to left). Each is a complete, finished CV filled with a fictional person, so you can see every block in context.
@@ -21,7 +31,7 @@ Use this when the assistant cannot run Python, for example a chat-only model, a 
 5. Write `&amp;` for `&`, `&lt;` for `<` and `&gt;` for `>` inside text. Do not add emoji or icons, because the fonts do not contain them.
 6. In the Arabic template, keep phone numbers, email addresses and links inside `<span class="ltr" dir="ltr">...</span>` so they display left to right.
 7. Do not add tables, columns, photos, logos, colours or new CSS. They break ATS parsing and the design.
-8. Give the user the finished file named `Firstname_Lastname_CV.html` (or the full HTML in one code block if you cannot attach files, with a note to save it as a `.html` file) with these steps:
+8. If you cannot create the PDF yourself, give the user the finished file named `Firstname_Lastname_CV.html` (or the full HTML in one code block if you cannot attach files, with a note to save it as a `.html` file) with these steps:
 
 > Open the file in Google Chrome or Microsoft Edge while connected to the internet, press Ctrl+P (Cmd+P on Mac), set Destination to **Save as PDF**, Paper size **A4**, Margins **Default**, and switch **Headers and footers off**. Then click Save.
 
