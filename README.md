@@ -15,7 +15,7 @@
 ## طريقة الاستخدام
 
 1. افتح محادثة جديدة على المنصة التي تستخدمها، وأرفق ملف المهارة `cv-2026-top.zip`. وإن كانت منصتك فيها قسم للمهارات (Skills)، فيمكنك رفعه هناك مرة واحدة بدل إرفاقه في كل محادثة.
-   - **في Gemini:** ارفع الملف من قسم المهارات، لا داخل المحادثة: Customize ثم Skills ثم Create ثم Upload، واختر `cv-2026-top.zip`. ثم اكتب `/` في المحادثة واختر المهارة. وإن لم يقبل الملف، فمن الحاسوب اضغط زر إضافة الملفات، ثم More uploads، ثم Import code، والصق هذا الرابط: `https://github.com/fadiahmadlinkedin-ai/cv-2026-top`
+   - **في Gemini:** من المتصفح على الحاسوب افتح gemini.google.com، واضغط تخصيص (Customize) ثم المهارات (Skills) ثم إنشاء (Create) ثم تحميل (Upload)، واختر `cv-2026-top.zip`، ثم اضغط إنشاء في أعلى الصفحة لحفظ المهارة. بعدها اكتب `/` في المحادثة واختر المهارة. لا ترفق الملف داخل المحادثة. وإن لم يقبل الملف، فمن الحاسوب اضغط زر إضافة الملفات، ثم More uploads، ثم Import code، والصق هذا الرابط: `https://github.com/fadiahmadlinkedin-ai/cv-2026-top`
 2. أرفق سيرتك القديمة أو معلوماتك، وإعلان الوظيفة إن وجد.
 3. الصق هذا الطلب، واكتب اللغة والوظيفة:
 
@@ -55,7 +55,7 @@ A free skill that turns your information, even rough notes, into a professional,
 **How to use it:**
 
 1. Open a new chat on your AI platform and attach `cv-2026-top.zip`. If your platform has a Skills section, you can upload it there once instead.
-   - **In Gemini:** upload it in the Skills section, not in a chat: Customize > Skills > Create > Upload, and choose `cv-2026-top.zip`. Then type `/` in a chat and pick the skill. If the file is refused, on a computer click Add files > More uploads > Import code, and paste `https://github.com/fadiahmadlinkedin-ai/cv-2026-top`
+   - **In Gemini:** on a computer, open gemini.google.com in a browser, click Customize > Skills > Create > Upload, choose `cv-2026-top.zip`, then click Create at the top to save the skill. Then type `/` in a chat and pick the skill. Do not attach the file inside a chat. If the file is refused, on a computer click Add files > More uploads > Import code, and paste `https://github.com/fadiahmadlinkedin-ai/cv-2026-top`
 2. Attach your old CV or notes, and the job advert if you have one.
 3. Paste this prompt:
 
