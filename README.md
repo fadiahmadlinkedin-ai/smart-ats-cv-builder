@@ -1,2 +1,2 @@
-# Media for the CV 2026 Top blog post
+# Media for the Smart ATS CV Builder blog post
 Images only. The skill itself is on the main branch.
