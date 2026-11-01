@@ -433,7 +433,7 @@ def save_previews(pdf: Path, dpi: int = 80) -> list:
 
 
 def env_report():
-    print(f"cv-2026-top {C.VERSION}")
+    print(f"smart-ats-cv-builder {C.VERSION}")
     print(f"Python {sys.version.split()[0]} ({sys.executable})")
     wp = find_weasyprint()
     print("WeasyPrint:", f"yes ({wp.__version__})" if wp else "no  (pip install weasyprint)")

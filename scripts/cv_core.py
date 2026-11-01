@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""cv-2026-top core library.
+"""smart-ats-cv-builder core library.
 
 Loads, normalises and validates CV data, then builds the HTML that every
 rendering engine turns into the final document. Standard library only
@@ -15,7 +15,7 @@ import re
 import unicodedata
 from pathlib import Path
 
-VERSION = "7.2.1"
+VERSION = "7.3.0"
 SKILL_DIR = Path(__file__).resolve().parent.parent
 ASSETS = SKILL_DIR / "assets"
 FONT_DIR = ASSETS / "fonts"

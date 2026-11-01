@@ -1,4 +1,4 @@
-# CV 2026 Top
+# Smart ATS CV Builder
 
 **بالعربية** | [English](#english)
 
@@ -15,21 +15,21 @@
 ## طريقتان للاستخدام
 ### الطريقة 1: إرفاق ملف في المحادثة (لكل المنصات)
 1. حمّل الملف المناسب لمنصتك:
-   - **ChatGPT وManus:** الملف الكامل [`cv-2026-top.zip`](https://github.com/fadiahmadlinkedin-ai/cv-2026-top/releases/latest/download/cv-2026-top.zip).
-   - **Gemini وClaude وأي مساعد آخر (Copilot وDeepSeek وGrok وغيرها):** الملف الواحد [`cv-2026-top-lite.txt`](https://github.com/fadiahmadlinkedin-ai/cv-2026-top/releases/latest/download/cv-2026-top-lite.txt). لا ترفق ملف ZIP في محادثة Gemini، لأنها لا تقرأ إلا 10 ملفات من داخله.
+   - **ChatGPT وManus:** الملف الكامل [`smart-ats-cv-builder.zip`](https://github.com/fadiahmadlinkedin-ai/smart-ats-cv-builder/releases/latest/download/smart-ats-cv-builder.zip).
+   - **Gemini وClaude وأي مساعد آخر (Copilot وDeepSeek وGrok وغيرها):** الملف الواحد [`smart-ats-cv-builder-lite.txt`](https://github.com/fadiahmadlinkedin-ai/smart-ats-cv-builder/releases/latest/download/smart-ats-cv-builder-lite.txt). لا ترفق ملف ZIP في محادثة Gemini، لأنها لا تقرأ إلا 10 ملفات من داخله.
 2. افتح محادثة جديدة، وأرفق الملف، ومعه سيرتك القديمة أو معلوماتك، وإعلان الوظيفة إن وجد.
 3. الصق هذا الطلب، واكتب اللغة والوظيفة:
 ```text
-اتبع تعليمات الملف المرفق cv-2026-top لكتابة سيرتي الذاتية (إذا كان ملف ZIP ففك ضغطه، واقرأ SKILL.md كاملًا واتبع خطواته بالترتيب).
+اتبع تعليمات الملف المرفق smart-ats-cv-builder لكتابة سيرتي الذاتية (إذا كان ملف ZIP ففك ضغطه، واقرأ SKILL.md كاملًا واتبع خطواته بالترتيب).
 اكتب لي سيرة ذاتية احترافية متوافقة مع ATS باللغة [العربية أو الإنجليزية] لوظيفة [المسمى الوظيفي، أو الصق إعلان الوظيفة].
 استخدم معلوماتي فقط، ولا تضف أي معلومة غير موجودة فيها، واسألني إذا نقص شيء مهم.
 أرسل لي السيرة ملف PDF، ومعه ملف Word إن أمكن.
 معلوماتي: [اكتب معلوماتك هنا بأي طريقة، أو أرفق سيرتك القديمة]
 ```
 ### الطريقة 2: تثبيتها مرة واحدة كمهارة (Claude وManus)
-ترفع `cv-2026-top.zip` مرة واحدة، ثم تستدعيها في أي محادثة دون إرفاق شيء:
+ترفع `smart-ats-cv-builder.zip` مرة واحدة، ثم تستدعيها في أي محادثة دون إرفاق شيء:
 - **Claude:** من Settings ثم Capabilities فعّل Code execution and file creation، ثم من Customize ثم Skills اضغط + ثم Create skill ثم Upload a skill.
-- **Manus:** من قائمة Skills اضغط Add ثم Upload a skill، ثم اكتب `/cv-2026-top` في المحادثة.
+- **Manus:** من قائمة Skills اضغط Add ثم Upload a skill، ثم اكتب `/smart-ats-cv-builder` في المحادثة.
 
 **تأكد أن ATS يقرأ سيرتك:** افتح ملف PDF، وحدد النص كله، وانسخه والصقه في ملف نصي. إن ظهر الكلام سليمًا وبالترتيب، فأنظمة ATS تقرؤه. وإن ظهرت حروف مفككة، فاستخدم ملف Word: افتحه في تطبيق Google Docs. إن ظهر «وضع التوافق مع ملفات Office»، فاضغط النقاط الثلاث، ثم علامة الاستفهام بجانبه، ثم Save as Google Docs. وفي السيرة العربية تأكد أن الخط Amiri. ثم النقاط الثلاث، ثم Share & export، ثم Send a copy، واختر PDF. وعلى الحاسوب: File ثم Save as Google Docs إن ظهر، ثم File ثم Download ثم PDF Document.
 
@@ -60,18 +60,18 @@ A free skill that turns your information, even rough notes, into a professional,
 **Two ways to use it**
 
 **Method 1: attach a file in a chat (every platform).**
-1. Download the right file: [`cv-2026-top.zip`](https://github.com/fadiahmadlinkedin-ai/cv-2026-top/releases/latest/download/cv-2026-top.zip) for ChatGPT and Manus; the single file [`cv-2026-top-lite.txt`](https://github.com/fadiahmadlinkedin-ai/cv-2026-top/releases/latest/download/cv-2026-top-lite.txt) for Gemini, Claude and any other assistant (Copilot, DeepSeek, Grok...). Do not attach the ZIP in a Gemini chat: Gemini reads only 10 files inside a ZIP.
+1. Download the right file: [`smart-ats-cv-builder.zip`](https://github.com/fadiahmadlinkedin-ai/smart-ats-cv-builder/releases/latest/download/smart-ats-cv-builder.zip) for ChatGPT and Manus; the single file [`smart-ats-cv-builder-lite.txt`](https://github.com/fadiahmadlinkedin-ai/smart-ats-cv-builder/releases/latest/download/smart-ats-cv-builder-lite.txt) for Gemini, Claude and any other assistant (Copilot, DeepSeek, Grok...). Do not attach the ZIP in a Gemini chat: Gemini reads only 10 files inside a ZIP.
 2. Open a new chat and attach the file with your old CV or notes, and the job advert if you have one.
 3. Paste this prompt:
 ```text
-Follow the instructions in the attached cv-2026-top file to write my CV (if it is a ZIP file, unzip it, read SKILL.md in full and follow its steps in order).
+Follow the instructions in the attached smart-ats-cv-builder file to write my CV (if it is a ZIP file, unzip it, read SKILL.md in full and follow its steps in order).
 Write me a professional, ATS-friendly CV in [English or Arabic] for [job title, or paste the job advert].
 Use only my information. Do not add any fact that is not in it, and ask me if something important is missing.
 Send me the CV as a PDF file, plus a Word file if you can.
 My information: [write your details here in any form, or attach your old CV]
 ```
 
-**Method 2: install it once as a skill (Claude and Manus).** Upload `cv-2026-top.zip` once, then call it in any chat. Claude: Settings > Capabilities > turn on Code execution and file creation, then Customize > Skills > + > Create skill > Upload a skill. Manus: Skills > Add > Upload a skill, then type `/cv-2026-top` in a chat.
+**Method 2: install it once as a skill (Claude and Manus).** Upload `smart-ats-cv-builder.zip` once, then call it in any chat. Claude: Settings > Capabilities > turn on Code execution and file creation, then Customize > Skills > + > Create skill > Upload a skill. Manus: Skills > Add > Upload a skill, then type `/smart-ats-cv-builder` in a chat.
 
 **Check that ATS software can read it:** open the PDF, select all the text, and paste it into a plain text editor. If every word appears whole and in order, ATS software can read it. If letters come out broken, use the Word file: open it in the Google Docs app; if it shows "Office Compatibility Mode", tap the three dots > the question mark next to it > Save as Google Docs. For an Arabic CV, make sure the font is Amiri. Then tap the three dots > Share & export > Send a copy > PDF. On a computer: File > Save as Google Docs (if shown), then File > Download > PDF Document.
 

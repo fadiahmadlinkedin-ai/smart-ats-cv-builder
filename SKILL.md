@@ -1,16 +1,16 @@
 ---
-name: cv-2026-top
+name: smart-ats-cv-builder
 description: Create, rewrite, translate or tailor professional ATS-friendly CVs and resumes in English or Arabic, delivered as a print-ready PDF with a clean single-column design, embedded fonts and built-in quality checks. Use when someone asks to write, improve, update or reformat a CV or resume, adapt it to a job advert, turn notes or an old CV into a new one, or build an Arabic CV (سيرة ذاتية، سي في، تحديث السيرة الذاتية). Works with or without code execution.
 license: Free for personal use; do not sell or re-attribute (LICENSE.md). Bundled fonts are SIL Open Font License 1.1 (assets/fonts/OFL.txt).
 metadata:
-  version: "7.2.1"
+  version: "7.3.0"
   author: "Fadi Ahmad"
   homepage: "https://www.fadiahmad.com"
   languages: "en, ar"
   requires: "Python 3.8+ for PDF; WeasyPrint or Chrome/Chromium/Edge; no-code mode needs nothing"
 ---
 
-# CV 2026 Top
+# Smart ATS CV Builder
 
 Build a one- to three-page, single-column CV that applicant tracking systems (ATS) read cleanly and recruiters find easy to scan. The design is fixed and tested: black serif name, Open Sans body (Noto Naskh Arabic in Arabic, bold for the name and headings), thin maroon dividers, A4, page numbers. Your job is the content. The script handles layout, fonts, page fitting and checks.
 

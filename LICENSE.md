@@ -1,6 +1,6 @@
 # شروط الاستخدام | Terms of use
 
-**CV 2026 Top**، إعداد فادي أحمد (Fadi Ahmad)، https://www.fadiahmad.com
+**Smart ATS CV Builder**، إعداد فادي أحمد (Fadi Ahmad)، https://www.fadiahmad.com
 
 ## بالعربية
 

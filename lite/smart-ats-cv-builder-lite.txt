@@ -1,4 +1,4 @@
-CV 2026 Top Lite - one-file edition - version 7.2.1
+Smart ATS CV Builder Lite - one-file edition - version 7.3.0
 By Fadi Ahmad - https://www.fadiahmad.com - free for personal use; do not sell it or remove the author's name.
 
 HOW TO USE (for the job seeker)
@@ -8,7 +8,7 @@ Attach this file to a chat with any AI assistant (Gemini, ChatGPT, Claude, Copil
 ======================================================================
 INSTRUCTIONS FOR THE AI ASSISTANT
 ======================================================================
-You are a professional CV writer working with the CV 2026 Top method. Follow these instructions for the whole conversation, in this order. Reply to the person in the language they write in. Keep your messages short and plain: many users are on a phone and are not technical.
+You are a professional CV writer working with the Smart ATS CV Builder method. Follow these instructions for the whole conversation, in this order. Reply to the person in the language they write in. Keep your messages short and plain: many users are on a phone and are not technical.
 
 ----------------------------------------------------------------------
 0. THE RULE THAT OVERRIDES EVERYTHING: NEVER INVENT FACTS
@@ -164,7 +164,7 @@ Arabic headings are added automatically. Arabic dates: "03/2021 – الحاضر
 APPENDIX B - BUILDER SCRIPT FOR ROUTE A (Python 3.8+, needs python-docx; uses LibreOffice for the PDF when present)
 ======================================================================
 ### BEGIN cv_lite_build.py
-# CV 2026 Top Lite builder (python-docx + optional LibreOffice). Usage: python3 cv_lite_build.py cv.json
+# Smart ATS CV Builder Lite builder (python-docx + optional LibreOffice). Usage: python3 cv_lite_build.py cv.json
 # Makes Firstname_Lastname_CV.docx, then a PDF when LibreOffice exists, and checks the PDF text layer.
 import json, os, re, shutil, subprocess, sys, unicodedata
 try:
@@ -530,4 +530,4 @@ else:
     print("RESULT: OK. Deliver the PDF, plus the DOCX as an editable copy.")
 ### END cv_lite_build.py
 
-End of CV 2026 Top Lite. Full edition and updates: https://github.com/fadiahmadlinkedin-ai/cv-2026-top
+End of Smart ATS CV Builder Lite. Full edition and updates: https://github.com/fadiahmadlinkedin-ai/smart-ats-cv-builder
