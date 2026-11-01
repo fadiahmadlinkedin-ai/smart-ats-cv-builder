@@ -31,7 +31,7 @@
 - **Claude:** من Settings ثم Capabilities فعّل Code execution and file creation، ثم من Customize ثم Skills اضغط + ثم Create skill ثم Upload a skill.
 - **Manus:** من قائمة Skills اضغط Add ثم Upload a skill، ثم اكتب `/cv-2026-top` في المحادثة.
 
-**تأكد أن ATS يقرأ سيرتك:** افتح ملف PDF، وحدد النص كله، وانسخه والصقه في ملف نصي. إن ظهر الكلام سليمًا وبالترتيب، فأنظمة ATS تقرؤه. وإن ظهرت حروف مفككة، فاستخدم ملف Word: افتحه في تطبيق Google Docs، ثم النقاط الثلاث، ثم Share & export، ثم Send a copy، واختر PDF. وعلى الحاسوب: File ثم Download ثم PDF Document.
+**تأكد أن ATS يقرأ سيرتك:** افتح ملف PDF، وحدد النص كله، وانسخه والصقه في ملف نصي. إن ظهر الكلام سليمًا وبالترتيب، فأنظمة ATS تقرؤه. وإن ظهرت حروف مفككة، فاستخدم ملف Word: افتحه في تطبيق Google Docs. إن ظهر «وضع التوافق مع ملفات Office»، فاضغط النقاط الثلاث، ثم علامة الاستفهام بجانبه، ثم Save as Google Docs. وفي السيرة العربية تأكد أن الخط Amiri. ثم النقاط الثلاث، ثم Share & export، ثم Send a copy، واختر PDF. وعلى الحاسوب: File ثم Save as Google Docs إن ظهر، ثم File ثم Download ثم PDF Document.
 
 **إذا وصلك ملف HTML بدل PDF:** افتحه في Google Chrome أو Microsoft Edge، ثم اضغط Ctrl+P (أو Cmd+P على Mac)، واختر «حفظ بتنسيق PDF»، وحجم الورق A4، وأوقف «الرؤوس والتذييلات»، ثم احفظ.
 
@@ -73,7 +73,7 @@ My information: [write your details here in any form, or attach your old CV]
 
 **Method 2: install it once as a skill (Claude and Manus).** Upload `cv-2026-top.zip` once, then call it in any chat. Claude: Settings > Capabilities > turn on Code execution and file creation, then Customize > Skills > + > Create skill > Upload a skill. Manus: Skills > Add > Upload a skill, then type `/cv-2026-top` in a chat.
 
-**Check that ATS software can read it:** open the PDF, select all the text, and paste it into a plain text editor. If every word appears whole and in order, ATS software can read it. If letters come out broken, use the Word file: open it in the Google Docs app, tap the three dots > Share & export > Send a copy > PDF; on a computer, File > Download > PDF Document.
+**Check that ATS software can read it:** open the PDF, select all the text, and paste it into a plain text editor. If every word appears whole and in order, ATS software can read it. If letters come out broken, use the Word file: open it in the Google Docs app; if it shows "Office Compatibility Mode", tap the three dots > the question mark next to it > Save as Google Docs. For an Arabic CV, make sure the font is Amiri. Then tap the three dots > Share & export > Send a copy > PDF. On a computer: File > Save as Google Docs (if shown), then File > Download > PDF Document.
 
 **If you receive an HTML file instead of a PDF:** open it in Google Chrome or Microsoft Edge, press Ctrl+P (Cmd+P on Mac), choose **Save as PDF**, paper size **A4**, turn **Headers and footers** off, and save.
 

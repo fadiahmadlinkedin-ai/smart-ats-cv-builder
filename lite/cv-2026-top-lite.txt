@@ -1,4 +1,4 @@
-CV 2026 Top Lite - one-file edition - version 7.2.0
+CV 2026 Top Lite - one-file edition - version 7.2.1
 By Fadi Ahmad - https://www.fadiahmad.com - free for personal use; do not sell it or remove the author's name.
 
 HOW TO USE (for the job seeker)
@@ -127,8 +127,8 @@ Keep it short, in their language:
 - Any real gap between them and the job advert.
 - The copy test: "Open the PDF, select all the text, copy it and paste it into a note or a blank email. Every word should appear whole and in order. If letters come out separated or reversed, ATS software will misread them too: use the Word file and the PDF steps below."
 - Only when you deliver a Word file without a PDF, or the CV as text, give these PDF steps:
-  Phone: install the free Google Docs app. Open the Word file with Google Docs (or paste the text into a new document). Arabic CV pasted as text: select all, then set the font to Amiri. Then tap the three dots at the top, Share & export, Send a copy, choose PDF, and save it to your phone.
-  Computer: open the Word file in Google Docs (docs.google.com, File, Open, Upload), then File, Download, PDF Document (.pdf). For an English CV, Microsoft Word also works: File, Save As, PDF.
+  Phone: install the free Google Docs app. Open the Word file with Google Docs (or paste the text into a new document). If the top of the file says "Office Compatibility Mode", tap the three dots, then the question mark next to "Office Compatibility Mode", then Save as Google Docs. Arabic CV: check that the font is Amiri; if not, select all and set the font to Amiri. Then tap the three dots, Share & export, Send a copy, choose PDF, and save it to your phone.
+  Computer: go to docs.google.com, open a blank document, then File, Open, Upload, and choose the Word file. If the File menu shows Save as Google Docs, choose it. Arabic CV: check that the font is Amiri (if it is not in the font list, use More fonts and search for Amiri). Then File, Download, PDF Document (.pdf). For an English CV, Microsoft Word also works: File, Save As, PDF.
 
 ======================================================================
 APPENDIX A - JSON FORMAT FOR ROUTE A
