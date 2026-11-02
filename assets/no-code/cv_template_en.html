@@ -16,9 +16,15 @@
 @font-face { font-family: 'CV Naskh'; src: url('https://cdn.jsdelivr.net/gh/notofonts/noto-fonts@ffebf8c1ee449e544955a7e813c54f9b73848eac/hinted/ttf/NotoNaskhArabic/NotoNaskhArabic-Bold.ttf') format('truetype'), url('https://raw.githubusercontent.com/notofonts/noto-fonts/ffebf8c1ee449e544955a7e813c54f9b73848eac/hinted/ttf/NotoNaskhArabic/NotoNaskhArabic-Bold.ttf') format('truetype'); font-weight: 700; font-style: normal; font-display: block; unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF; }
 @page {
     size: A4;
-    margin: 0.6cm 1.5cm 1.0cm 1.5cm;
+    /* Thin maroon frame on every page (a page border, not a text element, so ATS
+       readers see nothing). Text width stays 180 mm: 0.7 cm margin + 0.8 cm padding. */
+    margin: 0.7cm;
+    border: 1.5pt solid #800000;
+    padding: 0.5cm 0.8cm 0.9cm 0.8cm;
     @bottom-center {
         content: "Page " counter(page);
+        vertical-align: top;
+        margin-top: -0.85cm;
         font-family: 'CV Sans', 'CV Naskh', sans-serif;
         font-size: 9pt;
         color: #777777;
@@ -39,7 +45,7 @@ a { color: inherit; text-decoration: none; }
     font-weight: 900;
     text-align: center;
     margin-bottom: 3px;
-    color: #000000;
+    color: #800000;
 }
 .contact-line {
     text-align: center;
@@ -183,7 +189,9 @@ a { color: inherit; text-decoration: none; }
         width: 210mm;
         min-height: 297mm;
         margin: 24px auto;
-        padding: 0.6cm 1.5cm 1.0cm 1.5cm;
+        padding: 1.2cm 1.5cm 1.6cm 1.5cm;
+        outline: 1.5pt solid #800000;
+        outline-offset: -0.7cm;
         box-shadow: 0 2px 12px rgba(0,0,0,0.18);
     }
     .print-help {
@@ -233,7 +241,7 @@ html.fit-p3 .maroon-line{margin:10px 25% !important}
 <script>
 /* Page fit: picks line spacing so the printed CV has no nearly empty last page. Do not edit. */
 (function () {
-  var PAGE = 281 * 96 / 25.4, NAMES = ["fit-m2", "fit-m1", "fit-p1", "fit-p2", "fit-p3"];
+  var PAGE = 269 * 96 / 25.4, NAMES = ["fit-m2", "fit-m1", "fit-p1", "fit-p2", "fit-p3"];
   function set(level) {
     var c = document.documentElement.classList;
     NAMES.forEach(function (n) { c.remove(n); });

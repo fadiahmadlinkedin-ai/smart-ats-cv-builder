@@ -74,6 +74,7 @@ Read the final HTML or text once more and confirm each point:
 1. The name, phone and email are the candidate's own and correctly spelled.
 2. No sample text from the template remains (search for "Okafor", "Northwind", "سارة", "example.com", "555").
 3. Every number, date, title and employer comes from the candidate. Nothing was invented.
-4. Bullets start with action verbs and are 1–2 lines long; the summary has no "I/my".
+4. Bullets start with action verbs (Arabic: a verbal noun such as إدارة، مراجعة، الإشراف على, never a past-tense verb) and are 1–2 lines long; the summary has no "I/my".
 5. Dates use one format throughout, newest first.
 6. The length fits the experience (see the table in `content-guide.md`).
+7. Arabic CV: the phone number is written without spaces (`+966555550123`), so it copies in the right order.

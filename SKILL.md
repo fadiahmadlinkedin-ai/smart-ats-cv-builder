@@ -3,7 +3,7 @@ name: smart-ats-cv-builder
 description: Create, rewrite, translate or tailor professional ATS-friendly CVs and resumes in English or Arabic, delivered as a print-ready PDF with a clean single-column design, embedded fonts and built-in quality checks. Use when someone asks to write, improve, update or reformat a CV or resume, adapt it to a job advert, turn notes or an old CV into a new one, or build an Arabic CV (سيرة ذاتية، سي في، تحديث السيرة الذاتية). Works with or without code execution.
 license: Free for personal use; do not sell or re-attribute (LICENSE.md). Bundled fonts are SIL Open Font License 1.1 (assets/fonts/OFL.txt).
 metadata:
-  version: "7.3.0"
+  version: "7.4.0"
   author: "Fadi Ahmad"
   homepage: "https://www.fadiahmad.com"
   languages: "en, ar"
@@ -12,7 +12,7 @@ metadata:
 
 # Smart ATS CV Builder
 
-Build a one- to three-page, single-column CV that applicant tracking systems (ATS) read cleanly and recruiters find easy to scan. The design is fixed and tested: black serif name, Open Sans body (Noto Naskh Arabic in Arabic, bold for the name and headings), thin maroon dividers, A4, page numbers. Your job is the content. The script handles layout, fonts, page fitting and checks.
+Build a one- to three-page, single-column CV that applicant tracking systems (ATS) read cleanly and recruiters find easy to scan. The design is fixed and tested: maroon serif name, Open Sans body (Noto Naskh Arabic in Arabic, bold for the name and headings), thin maroon dividers, a thin maroon frame around every page, A4, page numbers inside the frame. Your job is the content. The script handles layout, fonts, page fitting and checks.
 
 All paths below are relative to this skill's folder.
 
@@ -26,7 +26,7 @@ Match the CV language to the request: English, or Arabic (right-to-left). If the
 
 ### 2. Write the content
 
-Follow `references/content-guide.md` for the summary, achievement bullets, skills, tailoring to an advert, section order, length and regional norms. Use `references/action-verbs-and-keywords.md` for strong verbs (English and Arabic) and industry keywords. Only use a keyword that is true for the candidate.
+Follow `references/content-guide.md` for the summary, achievement bullets, skills, tailoring to an advert, section order, length and regional norms. Use `references/action-verbs-and-keywords.md` for strong verbs (English) and verbal nouns (Arabic) and industry keywords. Only use a keyword that is true for the candidate. Arabic bullets start with a verbal noun (إدارة، مراجعة، الإشراف على), never a past-tense verb, so the same wording fits men and women; the build warns when it finds one.
 
 ### 3. Choose the mode
 

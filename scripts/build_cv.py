@@ -490,6 +490,7 @@ def main():
     d = C.normalise(raw, rep)
     lang = a.lang if a.lang != "auto" else (raw.get("lang") if raw.get("lang") in ("en", "ar") else C.detect_lang(d))
     rep.note(f"Language: {lang}" + (" (detected)" if a.lang == "auto" else ""))
+    C.apply_lang_rules(d, lang, rep)
     C.check_data(d, lang, rep)
     rep.print("Data checks")
     if rep.errors or (a.strict and rep.warnings):

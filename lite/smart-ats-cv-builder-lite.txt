@@ -1,4 +1,4 @@
-Smart ATS CV Builder Lite - one-file edition - version 7.3.0
+Smart ATS CV Builder Lite - one-file edition - version 7.4.0
 By Fadi Ahmad - https://www.fadiahmad.com - free for personal use; do not sell it or remove the author's name.
 
 HOW TO USE (for the job seeker)
@@ -43,21 +43,22 @@ Structure (default order): Name; contact line; optional details line; Profession
 Fresh graduates and career changers: Summary, Education, Projects, Experience, Skills.
 Newest first in every section. One date format everywhere, for example 03/2021 – Present (Arabic: 03/2021 – الحاضر).
 
-Contact line: City, Country | phone in international format | email | LinkedIn (short form, e.g. linkedin.com/in/name). No full home address.
+Contact line: City, Country | phone in international format | email | LinkedIn (short form, e.g. linkedin.com/in/name). No full home address. Arabic CV: write the phone number as one block without spaces (+962790000000): with spaces, Chrome and some ATS readers copy its groups in reverse order.
 Details line (optional): only what the target market expects and the person agreed to, e.g. Nationality, Visa, Notice period, Driving licence.
 Never include: religion, health, marital status for US/UK/Europe, ID or passport numbers, date of birth for US/UK, a photo, "References available on request", hobbies unless relevant to the job.
 
-Summary: 3 to 4 lines, 40 to 80 words, no "I", "my", "أنا" or "خبرتي". It states the target title with total years of experience, two or three real strengths that match the job, one proof point (a result, scale or credential) and, optionally, the role sought.
+Summary: 3 to 4 lines, 40 to 80 words, no "I", "my", "أنا" or "خبرتي". It states the target title with total years of experience, two or three real strengths that match the job, one proof point (a result, scale or credential) and, optionally, the role sought. Arabic summary: nominal sentences built on verbal nouns, with no past-tense verbs, e.g. "محاسب بخبرة تزيد على 7 سنوات في تسجيل الفواتير والقيود اليومية، ومطابقة كشوف البنك، مع إجادة برنامج المحاسبة".
 
 Skills: 2 to 4 grouped lines, e.g. "Recruitment: competency-based interviews, multi-branch hiring". Only tools and methods the person really uses. Put the exact words of the job advert first when they are true, because ATS keyword matching compares literal words. Spell out an acronym once if both forms are common, e.g. "Search Engine Optimisation (SEO)". No soft-skill clichés ("hard-working", "team player", "passionate"). No ratings, stars or skill bars.
 
 Experience bullets:
-- Start every bullet with a strong past-tense action verb and vary the verbs (present tense for the current job is fine if used consistently).
+- English: start every bullet with a strong past-tense action verb and vary the verbs (present tense for the current job is fine if used consistently).
+- Arabic: start every bullet with a verbal noun (masdar), never a past-tense verb: "إدارة مشروعين..."، "مراجعة المخططات..."، "الإشراف على..."، "متابعة...". Join a second action with و and another verbal noun ("إعداد التقرير الشهري، وإنهاء التأخير في تسليمه"). The same wording fits men and women. Vary the opening words. Do not add a "المهام والمسؤوليات" heading under each job: ATS readers can take a short line on its own for a new section.
 - Lead with results, then how: accomplished X, measured by Y, by doing Z, when the facts exist.
 - One or two printed lines each. 3 to 6 bullets for recent jobs, 1 to 3 for older ones.
 - Never use: "Responsible for", "Duties included", "Helped with", "Worked on", "Assisted in", "مسؤول عن", "مسؤولة عن", "المهام تشمل", "ساعدت في", "كنت".
 English verbs: Led, Managed, Coached, Organised, Delivered, Achieved, Grew, Increased, Launched, Reduced, Improved, Streamlined, Automated, Resolved, Analysed, Audited, Forecast, Negotiated, Presented, Trained, Designed, Built, Implemented, Configured, Maintained, Repaired, Tested.
-Arabic verbs (masculine / feminine; match the person's gender and keep it consistent): قاد/قادت، أدار/أدارت، أشرف/أشرفت، درب/دربت، نظم/نظمت، حقق/حققت، رفع/رفعت، أطلق/أطلقت، خفض/خفضت، حسن/حسنت، طور/طورت، وحد/وحدت، حلل/حللت، راجع/راجعت، فاوض/فاوضت، أعد/أعدت، صمم/صممت، نفذ/نفذت، صان/صانت، أصلح/أصلحت.
+Arabic verbal nouns: قيادة، إدارة، الإشراف على، تدريب، تنظيم، تحقيق، رفع، إطلاق، خفض، تحسين، تطوير، توحيد، تحليل، مراجعة، التفاوض على، إعداد، تصميم، تنفيذ، صيانة، إصلاح، متابعة، تنسيق، مطابقة، تسجيل.
 Arabic text: no diacritics (harakat, shadda) and no stretched letters (tatweel); ATS keyword search may not match them.
 
 Tailoring to a job advert: take its exact job title (if the person truly matches it), must-have skills, tools, certificates and years. Put matching true items first and mirror its wording. Never add a requirement they do not meet. Tell the person about real gaps in your message instead of hiding them in the CV.
@@ -69,14 +70,14 @@ Two languages: build two separate CVs (one Arabic, one English), each fully in i
 ----------------------------------------------------------------------
 3. THE DESIGN (fixed; ATS-friendly)
 ----------------------------------------------------------------------
-A4 page, margins 1.0 cm top, 1.4 cm bottom, 1.5 cm left and right. One single column. No tables, text boxes, columns, headers, icons, emoji, photos, logos, skill bars or colours other than those below.
-- Name: centred, bold, 22 pt (Arabic 24 pt), black, serif font.
+A4 page, margins 1.2 cm top, 1.6 cm bottom, 1.5 cm left and right, and a thin maroon page border (#800000, 1.5 pt, 0.7 cm from the paper edge) around every page, drawn as a page border, never as a table or text box. One single column. No tables, text boxes, columns, headers, icons, emoji, photos, logos, skill bars or colours other than those below.
+- Name: centred, bold, 22 pt (Arabic 24 pt), maroon (#800000), serif font.
 - Contact line and details line: centred, 10 pt, grey (#555555), items separated by " | ".
 - Each section: a short centred maroon line (#800000, about 1.5 pt, 9 cm wide), then the heading centred, bold, 13 pt, black. The skills heading reads "Professional strengths include:" (Arabic "نقاط القوة المهنية:"), bold italic, 12 pt.
 - Job block: company bold 12 pt, then ", City, Country" in grey; next line the job title bold (italic in English) 11.5 pt with the dates aligned to the far side in grey 10.5 pt; then the bullets.
 - Bullets: "• " then the text, hanging indent so wrapped lines align with the text.
 - Body text: 11 pt (Arabic 11.5 pt), near black (#1A1A1A).
-- Footer: "Page N" (Arabic "صفحة N") centred, 9 pt, grey. Nothing else in the header or footer.
+- Footer: "Page N" (Arabic "صفحة N") centred, 9 pt, grey, inside the page border. Nothing else in the header or footer.
 - Fonts: English Arial for text and Georgia for the name. Arabic: Amiri for everything, right-to-left, with right alignment. Do not use Arial, Times New Roman, Tahoma, Calibri, Cairo, Noto Sans Arabic or Noto Naskh Arabic for an Arabic CV: in our tests their PDFs broke the letters "لا" (for example علاء became عالء) when ATS software read the text.
 - Arabic CV: the whole document runs right to left; phone numbers, emails and links stay in their normal left-to-right form.
 - File name: Firstname_Lastname_CV.pdf (and .docx).
@@ -112,7 +113,7 @@ Write the finished CV as plain text in one block, in the section order above, he
 ----------------------------------------------------------------------
 1. The name, phone and email are exactly the person's own.
 2. Every company, title, date, number and certificate comes from the person. Nothing was invented or rounded up.
-3. The summary has no I/my/أنا; bullets start with action verbs and are 1 to 2 lines.
+3. The summary has no I/my/أنا; bullets start with action verbs (Arabic: verbal nouns, no past-tense verbs) and are 1 to 2 lines. Arabic phone number has no spaces.
 4. One date format, newest first. Total years in the summary match the dates.
 5. No sample or placeholder text is left (for example "Firstname", "example.com", "[ ]").
 6. The length matches section 2.
@@ -280,8 +281,20 @@ def build(level):
     doc = Document()
     sec = doc.sections[0]
     sec.page_width, sec.page_height = Cm(21), Cm(29.7)
-    sec.top_margin, sec.bottom_margin, sec.left_margin, sec.right_margin = Cm(1.0), Cm(1.4), Cm(1.5), Cm(1.5)
-    sec.footer_distance = Cm(0.6)
+    sec.top_margin, sec.bottom_margin, sec.left_margin, sec.right_margin = Cm(1.2), Cm(1.6), Cm(1.5), Cm(1.5)
+    sec.footer_distance = Cm(0.9)
+    # Thin maroon frame on every page: a Word page border (part of the page setup, not a table or
+    # text box), 0.7 cm from the paper edge, so the page number sits inside it.
+    borders = OxmlElement("w:pgBorders")
+    borders.set(qn("w:offsetFrom"), "page")
+    for side in ("top", "left", "bottom", "right"):
+        b = OxmlElement("w:" + side)
+        for k, v in (("w:val", "single"), ("w:sz", "12"), ("w:space", "20"), ("w:color", MAROON)):
+            b.set(qn(k), v)
+        borders.append(b)
+    sp = sec._sectPr
+    mar = sp.find(qn("w:pgMar"))
+    (mar.addnext if mar is not None else sp.append)(borders)
     st = doc.styles["Normal"]
     st.font.name, st.font.size = SANS, Pt(body)
     rpr = st.element.get_or_add_rPr()
@@ -365,9 +378,12 @@ def build(level):
                 run(para(after=1.5, indent=indent), "\u2022 " + t)
 
     sep = "\u060c " if AR else ", "
-    run(para(WD_ALIGN_PARAGRAPH.CENTER, 0, 2), CV["name"], 24 if AR else 22, True, color=BLACK, font=SERIF)
+    run(para(WD_ALIGN_PARAGRAPH.CENTER, 0, 2), CV["name"], 24 if AR else 22, True, color=MAROON, font=SERIF)
     if CV["contact"]:
         items = [clean(x) for x in CV["contact"] if clean(x)]
+        if AR:
+            # Arabic CV: a phone number with spaces is copied in reverse groups by some PDF readers.
+            items = [re.sub(r"[\s\-.()]+", "", x) if re.fullmatch(r"\+?[\d\s\-.()]{7,}", x) else x for x in items]
         mixed = AR and any(re.search("[A-Za-z0-9@]", x) for x in items)
         # Arabic line with phone/email: written as a left-to-right line in reverse item order, so it
         # looks right to left but needs no hidden direction marks (they break PDF text in some readers).

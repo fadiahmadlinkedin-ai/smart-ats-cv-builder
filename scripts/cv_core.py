@@ -443,6 +443,31 @@ def page_budget(years: int) -> int:
     return 3
 
 
+# Arabic bullets start with a verbal noun (masdar): إدارة، مراجعة، الإشراف على. It reads the same for
+# men and women. Common past-tense openings are flagged so they can be rewritten (words that are
+# also verbal nouns, such as خفض، رفع، وضع، عمل, are left out).
+AR_PAST_OPENERS = set("""
+قاد قادت أدار أدارت طور طورت خفضت أعد أعدت نفذ نفذت أشرف أشرفت نظم نظمت حقق حققت راجع راجعت
+طبق طبقت نسق نسقت أنشأ أنشأت صمم صممت حسن حسنت سجل سجلت طابق طابقت شارك شاركت تولى تولت أعاد أعادت
+قدم قدمت حلل حللت درب دربت رفعت زاد زادت وفر وفرت تابع تابعت بنى بنت أطلق أطلقت أسس أسست جهز جهزت
+عملت ساهم ساهمت أنجز أنجزت اعتمد اعتمدت أجرى أجرت كتب كتبت ترأس ترأست وضعت حدث حدثت
+""".split())
+def _ar_key(word: str) -> str:
+    w = ARABIC_MARKS_RE.sub("", word).strip("،,.:;")
+    return re.sub("[\u0622\u0623\u0625]", "\u0627", w)
+_AR_PAST_KEYS = {_ar_key(w) for w in AR_PAST_OPENERS}
+def apply_lang_rules(data: dict, lang: str, rep: Report) -> None:
+    """Language-specific clean-up, run once the language is known."""
+    if lang != "ar" or not data:
+        return
+    phone = data.get("phone", "")
+    if phone:
+        # In a right-to-left line, a phone number with spaces is copied in reverse order by
+        # Chrome's PDF reader ("0000 000 79 +962"). Written as one block it stays intact.
+        packed = re.sub(r"[\s\-\u2010-\u2014.()]+", "", phone)
+        if packed != phone:
+            data["phone"] = packed
+            rep.note(f"Phone written without spaces for the Arabic CV: {packed}")
 def check_data(data: dict, lang: str, rep: Report) -> None:
     """Content and safety checks on normalised data (errors block rendering)."""
     if not data:
@@ -516,9 +541,20 @@ def check_data(data: dict, lang: str, rep: Report) -> None:
             w = (b.split() or [""])[0].lower().strip(",.:;")
             if w:
                 starts[w] = starts.get(w, 0) + 1
+    if lang == "ar":
+        past = []
+        for sec in ("experience", "projects", "volunteer"):
+            for job in data.get(sec, []):
+                for b in job.get("bullets", []):
+                    first = (b.split() or [""])[0]
+                    if _ar_key(first) in _AR_PAST_KEYS or _ar_key(first)[1:] in _AR_PAST_KEYS and first[:1] in "و":
+                        past.append(first)
+        if past:
+            rep.warn("Arabic bullets start with a past-tense verb (" + "، ".join(dict.fromkeys(past)) +
+                     "). Start each bullet with a verbal noun instead: إدارة، مراجعة، إعداد، الإشراف على.")
     rep_verbs = [f"'{w}' x{c}" for w, c in starts.items() if c > 2]
     if rep_verbs:
-        rep.note("Repeated opening words: " + ", ".join(rep_verbs) + ". Vary the action verbs.")
+        rep.note("Repeated opening words: " + ", ".join(rep_verbs) + ". Vary the opening words.")
     bullets = [b for j in data.get("experience", []) for b in j.get("bullets", [])]
     if bullets:
         with_num = sum(1 for b in bullets if re.search(r"\d", b))
@@ -794,12 +830,12 @@ def fit_classes_css(lang: str) -> str:
 
 # Runs only when the HTML is opened in a browser (the script-mode PDF engines get
 # the spacing level directly). It never changes text: it measures the CV at the
-# A4 content height (297 mm minus the 16 mm page margins) and picks the spacing
+# A4 content height (297 mm minus 28 mm of page margin, frame padding and footer) and picks the spacing
 # level that avoids a nearly empty last page, like build_cv.py does for PDFs.
 FIT_SCRIPT = """<script>
 /* Page fit: picks line spacing so the printed CV has no nearly empty last page. Do not edit. */
 (function () {
-  var PAGE = 281 * 96 / 25.4, NAMES = ["fit-m2", "fit-m1", "fit-p1", "fit-p2", "fit-p3"];
+  var PAGE = 269 * 96 / 25.4, NAMES = ["fit-m2", "fit-m1", "fit-p1", "fit-p2", "fit-p3"];
   function set(level) {
     var c = document.documentElement.classList;
     NAMES.forEach(function (n) { c.remove(n); });

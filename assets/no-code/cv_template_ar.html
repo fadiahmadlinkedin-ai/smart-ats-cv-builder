@@ -13,9 +13,15 @@
 @font-face { font-family: 'CV Naskh'; src: url('https://cdn.jsdelivr.net/gh/notofonts/noto-fonts@ffebf8c1ee449e544955a7e813c54f9b73848eac/hinted/ttf/NotoNaskhArabic/NotoNaskhArabic-Bold.ttf') format('truetype'), url('https://raw.githubusercontent.com/notofonts/noto-fonts/ffebf8c1ee449e544955a7e813c54f9b73848eac/hinted/ttf/NotoNaskhArabic/NotoNaskhArabic-Bold.ttf') format('truetype'); font-weight: 700; font-style: normal; font-display: block; }
 @page {
     size: A4;
-    margin: 0.6cm 1.5cm 1.0cm 1.5cm;
+    /* Thin maroon frame on every page (a page border, not a text element, so ATS
+       readers see nothing). Text width stays 180 mm: 0.7 cm margin + 0.8 cm padding. */
+    margin: 0.7cm;
+    border: 1.5pt solid #800000;
+    padding: 0.5cm 0.8cm 0.9cm 0.8cm;
     @bottom-center {
         content: "صفحة " counter(page);
+        vertical-align: top;
+        margin-top: -0.85cm;
         font-family: 'CV Naskh', 'CV Sans', sans-serif;
         font-size: 9pt;
         color: #777777;
@@ -41,7 +47,7 @@ a { color: inherit; text-decoration: none; }
     font-weight: 700;
     text-align: center;
     margin-bottom: 3px;
-    color: #000000;
+    color: #800000;
 }
 .contact-line {
     text-align: center;
@@ -186,7 +192,9 @@ a { color: inherit; text-decoration: none; }
         width: 210mm;
         min-height: 297mm;
         margin: 24px auto;
-        padding: 0.6cm 1.5cm 1.0cm 1.5cm;
+        padding: 1.2cm 1.5cm 1.6cm 1.5cm;
+        outline: 1.5pt solid #800000;
+        outline-offset: -0.7cm;
         box-shadow: 0 2px 12px rgba(0,0,0,0.18);
     }
     .print-help {
@@ -236,7 +244,7 @@ html.fit-p3 .maroon-line{margin:10px 25% !important}
 <script>
 /* Page fit: picks line spacing so the printed CV has no nearly empty last page. Do not edit. */
 (function () {
-  var PAGE = 281 * 96 / 25.4, NAMES = ["fit-m2", "fit-m1", "fit-p1", "fit-p2", "fit-p3"];
+  var PAGE = 269 * 96 / 25.4, NAMES = ["fit-m2", "fit-m1", "fit-p1", "fit-p2", "fit-p3"];
   function set(level) {
     var c = document.documentElement.classList;
     NAMES.forEach(function (n) { c.remove(n); });
@@ -295,11 +303,11 @@ html.fit-p3 .maroon-line{margin:10px 25% !important}
 
 <div class="print-help"><strong>لحفظ السيرة الذاتية بصيغة PDF:</strong> افتح هذا الملف في متصفح Google Chrome أو Microsoft Edge، واضغط Ctrl+P (أو Cmd+P في ماك)، واختر «حفظ بتنسيق PDF»، وحجم الورق A4، والهوامش «افتراضي»، وألغِ خيار «الرؤوس والتذييلات». هذه الملاحظة الصفراء لا تظهر في ملف PDF.</div>
 <div class="name">سارة خالد العتيبي</div>
-<div class="contact-line">الرياض، المملكة العربية السعودية | <span class="ltr" dir="ltr">+966 55 555 0123</span></div>
+<div class="contact-line">الرياض، المملكة العربية السعودية | <span class="ltr" dir="ltr">+966555550123</span></div>
 <div class="contact-line"><span class="ltr" dir="ltr"><a href="mailto:sara.alotaibi@example.com">sara.alotaibi@example.com</a></span> | <span class="ltr" dir="ltr"><a href="https://linkedin.com/in/sara-alotaibi-example">linkedin.com/in/sara-alotaibi-example</a></span></div>
 <hr class="maroon-line">
 <div class="section-title">الملخص المهني</div>
-<div class="summary-text">محاسبة قانونية بخبرة 7 سنوات في المحاسبة المالية وإعداد القوائم المالية وفق المعايير الدولية (IFRS) في قطاعي التجزئة والخدمات اللوجستية. قادت إغلاق الحسابات الشهري لمجموعة من خمس شركات تابعة، وطورت إجراءات الرقابة الداخلية والامتثال لضريبة القيمة المضافة. تجيد العمل على SAP وتحليل البيانات المالية لدعم قرارات الإدارة.</div>
+<div class="summary-text">محاسبة قانونية بخبرة 7 سنوات في المحاسبة المالية وإعداد القوائم المالية وفق المعايير الدولية (IFRS) في قطاعي التجزئة والخدمات اللوجستية. خبرة في قيادة الإغلاق الشهري للحسابات لمجموعة من خمس شركات تابعة، وتطوير إجراءات الرقابة الداخلية والامتثال لضريبة القيمة المضافة، مع إجادة العمل على SAP وتحليل البيانات المالية لدعم قرارات الإدارة.</div>
 <hr class="maroon-line">
 <div class="strengths-title">نقاط القوة المهنية:</div>
 <hr class="maroon-line">
@@ -310,13 +318,13 @@ html.fit-p3 .maroon-line{margin:10px 25% !important}
 <div class="exp-entry">
 <div class="exp-company-line"><span class="exp-company-name">مجموعة الواحة للتجزئة</span> - <span class="exp-location">الرياض، السعودية</span></div>
 <div class="exp-title-row"><span class="exp-job-title">محاسبة أولى</span><span class="exp-date">03/2021 – الحاضر</span></div>
-<div class="exp-project">تدير الحسابات المجمعة لخمس شركات تابعة في المملكة.</div>
-<div class="exp-achievements"><p>• قادت الإغلاق الشهري لخمس شركات تابعة، واختصرت مدته من 10 أيام عمل إلى 6 أيام.</p><p>• أعدت القوائم المالية المجمعة وفق المعايير الدولية، واجتازت المجموعة المراجعة الخارجية لثلاث سنوات متتالية دون ملاحظات جوهرية.</p><p>• طبقت مطابقات بنكية آلية على SAP، فخفضت البنود المعلقة بنسبة 40% خلال ستة أشهر.</p><p>• نسقت إقرارات ضريبة القيمة المضافة الربعية، وأغلقت 12 استفسارا من هيئة الزكاة والضريبة والجمارك دون غرامات.</p></div>
+<div class="exp-project">إدارة الحسابات المجمعة لخمس شركات تابعة في المملكة.</div>
+<div class="exp-achievements"><p>• قيادة الإغلاق الشهري لخمس شركات تابعة، واختصار مدته من 10 أيام عمل إلى 6 أيام.</p><p>• إعداد القوائم المالية المجمعة وفق المعايير الدولية، مما أسهم في اجتياز المجموعة المراجعة الخارجية لثلاث سنوات متتالية دون ملاحظات جوهرية.</p><p>• تطبيق مطابقات بنكية آلية على SAP، وخفض البنود المعلقة بنسبة 40% خلال ستة أشهر.</p><p>• تنسيق إقرارات ضريبة القيمة المضافة الربعية، وإغلاق 12 استفسارا من هيئة الزكاة والضريبة والجمارك دون غرامات.</p></div>
 </div>
 <div class="exp-entry">
 <div class="exp-company-line"><span class="exp-company-name">شركة النخبة للخدمات اللوجستية</span> - <span class="exp-location">جدة، السعودية</span></div>
 <div class="exp-title-row"><span class="exp-job-title">محاسبة</span><span class="exp-date">01/2018 – 02/2021</span></div>
-<div class="exp-achievements"><p>• أدارت حسابات الذمم الدائنة لأكثر من 300 مورد، وخفضت متوسط مدة السداد المتأخر من 18 يوما إلى 7 أيام.</p><p>• أنشأت سجل الأصول الثابتة على النظام وجرد 1,500 أصل، فصححت فروقات بقيمة 2.1 مليون ريال.</p><p>• أعدت تقارير التكاليف الشهرية لكل فرع، فساعدت الإدارة على إعادة تسعير عقدين كبيرين.</p></div>
+<div class="exp-achievements"><p>• إدارة حسابات الذمم الدائنة لأكثر من 300 مورد، وخفض متوسط مدة السداد المتأخر من 18 يوما إلى 7 أيام.</p><p>• إنشاء سجل الأصول الثابتة على النظام وجرد 1,500 أصل، وتصحيح فروقات بقيمة 2.1 مليون ريال.</p><p>• إعداد تقارير التكاليف الشهرية لكل فرع، مما دعم قرار الإدارة بإعادة تسعير عقدين كبيرين.</p></div>
 </div>
 <hr class="maroon-line">
 <div class="section-title">المؤهلات العلمية</div>
@@ -335,7 +343,7 @@ html.fit-p3 .maroon-line{margin:10px 25% !important}
 <div class="volunteer-entry">
 <div class="volunteer-role">مدربة متطوعة في الثقافة المالية</div>
 <div class="volunteer-org">جمعية تمكين الشباب (2019 – 2022)</div>
-<div class="volunteer-desc">قدمت ورش عمل شهرية في إعداد الميزانية الشخصية لأكثر من 200 مستفيد.</div>
+<div class="volunteer-desc">تقديم ورش عمل شهرية في إعداد الميزانية الشخصية لأكثر من 200 مستفيد.</div>
 </div>
 <hr class="maroon-line">
 <div class="section-title">اللغات</div>

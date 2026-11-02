@@ -15,7 +15,7 @@ Every company, title, date, degree, certificate, number and percentage must come
 | :--- | :--- | :--- |
 | "I fix laptops" | "Repaired 30+ laptops weekly with a 96% fix rate" | "Diagnosed and repaired laptops, phones and game consoles, handling hardware and software faults end to end" |
 | "I managed a team" | "Led a 12-person team to 35% growth" | "Led the sales team through weekly pipeline reviews and individual coaching" |
-| "صيانة لابتوبات" | "أصلح أكثر من 30 جهازا أسبوعيا بنسبة نجاح 96%" | "شخص وأصلح أعطال الحواسيب المحمولة والهواتف وأجهزة الألعاب، من القطع إلى البرمجيات" |
+| "صيانة لابتوبات" | "إصلاح أكثر من 30 جهازا أسبوعيا بنسبة نجاح 96%" | "تشخيص أعطال الحواسيب المحمولة والهواتف وأجهزة الألعاب وإصلاحها، من القطع إلى البرمجيات" |
 
 ## 2. Questions to ask (once, all together)
 
@@ -39,11 +39,20 @@ Use the X-Y-Z pattern when the facts exist: accomplished **X**, measured by **Y*
 
 > Cut month-end close from 10 to 6 working days (Y) for five subsidiaries (X) by automating bank reconciliations in SAP (Z).
 
-- Start every bullet with a strong action verb, and vary the verbs. `references/action-verbs-and-keywords.md` has lists in English and Arabic.
+- Start every bullet with a strong action word, and vary it: a past-tense verb in English, a verbal noun (masdar) in Arabic. `references/action-verbs-and-keywords.md` has lists in both languages.
 - Keep each bullet to one or two printed lines. Put 3–6 bullets on recent roles and 1–3 on older ones.
 - Lead with results, not duties. Avoid "responsible for", "duties included", "tasked with", "helped with", "worked on", "مسؤول عن", "المهام تشمل", "ساعدت في".
-- Do not use first person (I, my, أنا, خبرتي). Arabic bullets should start with a past-tense verb: قاد، طور، خفض، أدار. Write Arabic without diacritics (harakat, shadda) or stretched letters (tatweel); the builder removes them anyway, because ATS keyword search may not match them.
-- Use the candidate's gender for Arabic verb forms (قاد / قادت), and keep it consistent.
+- Do not use first person (I, my, أنا, خبرتي). Write Arabic without diacritics (harakat, shadda) or stretched letters (tatweel); the builder removes them anyway, because ATS keyword search may not match them.
+- Arabic bullets start with a verbal noun (masdar), never with a past-tense verb: إدارة، إعداد، مراجعة، الإشراف على، متابعة، تطوير، خفض. This is the usual form in professional Arabic CVs, and it is the same for men and women, so no gender agreement is needed. Keep the masdar in the follow-on clauses of the same bullet (واختصار، وتحقيق، مما أدى إلى).
+
+  | Past tense (do not use) | Masdar (use) |
+  | :--- | :--- |
+  | قاد الإغلاق الشهري لخمس شركات، واختصر مدته إلى 6 أيام | إدارة الإغلاق الشهري لخمس شركات، واختصار مدته إلى 6 أيام |
+  | راجعت المخططات التنفيذية لثماني مدارس | مراجعة المخططات التنفيذية لثماني مدارس، والتأكد من تنفيذ الأعمال وفقها |
+  | أشرف على 14 عاملا ونظم الورديات | الإشراف على 14 عاملا، وتنظيم ورديات العمل، ورفع التقارير إلى مدير المشروع |
+
+- English bullets keep the past tense (present tense for the current role is also fine if used consistently).
+- Do not add a sub-heading such as "Responsibilities" or "المهام والمسؤوليات" above the bullets. The job title line already introduces them, and an extra short heading can be read by an ATS as the start of a new section, which separates the bullets from their job.
 - Optional `project` line under a job: one sentence of context (scope, team, product). It is not a bullet.
 
 ## 4. Professional summary
@@ -54,6 +63,8 @@ Three or four lines, 40–80 words, written without pronouns. It should state:
 2. two or three areas of real strength, matching the target job,
 3. one proof point (a result, scale, or credential),
 4. optionally, the kind of role or industry sought.
+
+In Arabic, build the summary from nominal phrases: the title, then بخبرة, then verbal nouns, e.g. «محاسب بخبرة تزيد على 7 سنوات في تسجيل الفواتير والقيود اليومية، ومطابقة كشوف البنك، وإعداد تقارير المصاريف الشهرية». A present-tense verb is acceptable for a skill or goal (يجيد، يتطلع إلى). Do not use past-tense verbs or first person.
 
 ## 5. Skills (`strengths`)
 
@@ -98,6 +109,8 @@ When content runs long, shorten older roles first (one or two bullets, or a sing
 | Arab countries generally | Arabic CVs are welcome for local employers. Multinationals usually expect English; build both if the candidate needs both. |
 
 Never include religion, health, ID or passport numbers, or a full home address. A city and country are enough.
+
+Write the phone number in international format without spaces, e.g. `+962790000000`. In an Arabic CV a number with spaces is split into separate left-to-right runs, and Chrome's copy and some PDF readers then return the groups in reverse order (`0000 000 79 +962`). The builder removes the spaces in Arabic CVs automatically.
 
 ## 10. What makes a CV ATS-friendly (and what this builder already does)
 

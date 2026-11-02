@@ -24,27 +24,27 @@ Advocated, Arbitrated, Articulated, Authored, Briefed, Clarified, Communicated, 
 ### Technical & Engineering
 Architected, Assembled, Built, Calculated, Coded, Configured, Constructed, Deployed, Designed, Devised, Engineered, Fabricated, Formatted, Formulated, Implemented, Installed, Maintained, Migrated, Operated, Overhauled, Programmed, Remodeled, Repaired, Replaced, Restored, Solved, Systematized, Tested, Troubleshot, Upgraded.
 
-## 2. Arabic action verbs (past tense, masculine / feminine)
+## 2. Arabic action words (verbal nouns / المصدر)
 
-Start each Arabic bullet with a past-tense verb that matches the candidate's gender, and use the same form throughout the CV.
+Start each Arabic bullet with a verbal noun (masdar), not a past-tense verb: «إدارة حسابات 300 مورد» rather than «أدار حسابات 300 مورد». The masdar is the same for men and women, so the CV needs no gender agreement. Vary the opening word, and keep the masdar in the rest of the bullet («وخفض مدة السداد»، «مما أدى إلى»).
 
 ### القيادة والإدارة
-قاد / قادت، أدار / أدارت، أشرف / أشرفت، وجه / وجهت، درب / دربت، نظم / نظمت، ترأس / ترأست، أسس / أسست، فوض / فوضت، نسق / نسقت
+قيادة، إدارة، الإشراف على، توجيه، تدريب، تنظيم، رئاسة، تأسيس، تفويض، تنسيق
 
 ### الإنجاز والنمو
-حقق / حققت، رفع / رفعت، ضاعف / ضاعفت، تجاوز / تجاوزت، أطلق / أطلقت، وسع / وسعت، أنجز / أنجزت، فاز / فازت، استقطب / استقطبت، نمى / نمت
+تحقيق، رفع، مضاعفة، تجاوز، إطلاق، توسيع، إنجاز، الفوز بـ، استقطاب، تنمية
 
 ### التحسين وخفض التكاليف
-خفض / خفضت، اختصر / اختصرت، حسن / حسنت، طور / طورت، أعاد هيكلة / أعادت هيكلة، أتمت / أتمتت، بسط / بسطت، وحد / وحدت، عالج / عالجت، وفر / وفرت
+خفض، اختصار، تحسين، تطوير، إعادة هيكلة، أتمتة، تبسيط، توحيد، معالجة، توفير
 
 ### التحليل والبحث
-حلل / حللت، قيم / قيمت، راجع / راجعت، دقق / دققت، رصد / رصدت، قاس / قاست، توقع / توقعت، درس / درست، اكتشف / اكتشفت، تحقق / تحققت
+تحليل، تقييم، مراجعة، تدقيق، رصد، قياس، التنبؤ بـ، دراسة، اكتشاف، التحقق من
 
 ### التواصل والعملاء
-فاوض / فاوضت، قدم / قدمت، أقنع / أقنعت، مثل / مثلت، صاغ / صاغت، أعد / أعدت، تواصل / تواصلت، استشار / استشارت، عرض / عرضت، ترجم / ترجمت
+التفاوض مع، تقديم، إقناع، تمثيل، صياغة، إعداد، التواصل مع، استشارة، عرض، ترجمة
 
 ### التقنية والهندسة
-صمم / صممت، بنى / بنت، برمج / برمجت، نفذ / نفذت، ركب / ركبت، شغل / شغلت، صان / صانت، نقل / نقلت، اختبر / اختبرت، أصلح / أصلحت
+تصميم، بناء، برمجة، تنفيذ، تركيب، تشغيل، صيانة، نقل، اختبار، إصلاح
 
 ## 3. Industry keyword banks
 

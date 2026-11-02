@@ -10,9 +10,15 @@
 /*{{FONT_FACES}}*/
 @page {
     size: A4;
-    margin: 0.6cm 1.5cm 1.0cm 1.5cm;
+    /* Thin maroon frame on every page (a page border, not a text element, so ATS
+       readers see nothing). Text width stays 180 mm: 0.7 cm margin + 0.8 cm padding. */
+    margin: 0.7cm;
+    border: 1.5pt solid #800000;
+    padding: 0.5cm 0.8cm 0.9cm 0.8cm;
     @bottom-center {
         content: "صفحة " counter(page);
+        vertical-align: top;
+        margin-top: -0.85cm;
         font-family: 'CV Naskh', 'CV Sans', sans-serif;
         font-size: 9pt;
         color: #777777;
@@ -38,7 +44,7 @@ a { color: inherit; text-decoration: none; }
     font-weight: 700;
     text-align: center;
     margin-bottom: 3px;
-    color: #000000;
+    color: #800000;
 }
 .contact-line {
     text-align: center;
@@ -183,7 +189,9 @@ a { color: inherit; text-decoration: none; }
         width: 210mm;
         min-height: 297mm;
         margin: 24px auto;
-        padding: 0.6cm 1.5cm 1.0cm 1.5cm;
+        padding: 1.2cm 1.5cm 1.6cm 1.5cm;
+        outline: 1.5pt solid #800000;
+        outline-offset: -0.7cm;
         box-shadow: 0 2px 12px rgba(0,0,0,0.18);
     }
     .print-help {

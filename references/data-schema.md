@@ -7,7 +7,7 @@ The builder reads one UTF-8 JSON file. Only `name` plus at least one `experience
 | Field | Type | Notes |
 | :--- | :--- | :--- |
 | `name` | text | Required. Full name exactly as the candidate writes it. |
-| `email`, `phone` | text | Give at least one. Phone in international format, e.g. `+966 55 555 0123`. |
+| `email`, `phone` | text | Give at least one. Phone in international format without spaces, e.g. `+966555550123`. Arabic CVs: the builder removes spaces so the number copies in the right order. |
 | `city`, `country` | text | Printed as "City, Country". Use `location` instead if you only have one string. |
 | `linkedin`, `website` | text | Short form without `https://` reads best, e.g. `linkedin.com/in/name`. |
 | `personal_details` | list of text | Optional line under the contacts, e.g. `["Nationality: Jordanian", "Driving licence: UAE"]`. Only add what the target market expects and the candidate agreed to share. |
@@ -73,7 +73,7 @@ Warnings never block the build unless you pass `--strict`. They cover missing co
 {
   "name": "Full Name",
   "email": "name@mail.com",
-  "phone": "+971 50 000 0000",
+  "phone": "+971500000000",
   "city": "Dubai",
   "country": "UAE",
   "summary": "Three to four lines that state role, years of experience, strongest areas and the value offered.",
@@ -84,7 +84,7 @@ Warnings never block the build unless you pass `--strict`. They cover missing co
       "location": "City, Country",
       "title": "Job Title",
       "dates": "01/2022 – Present",
-      "bullets": ["Action verb + what was done + measurable result the candidate confirmed."]
+      "bullets": ["Action verb (Arabic: verbal noun) + what was done + measurable result the candidate confirmed."]
     }
   ],
   "education": [
