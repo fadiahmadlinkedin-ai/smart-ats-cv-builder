@@ -15,7 +15,7 @@ import re
 import unicodedata
 from pathlib import Path
 
-VERSION = "7.3.0"
+VERSION = "7.4.0"
 SKILL_DIR = Path(__file__).resolve().parent.parent
 ASSETS = SKILL_DIR / "assets"
 FONT_DIR = ASSETS / "fonts"
